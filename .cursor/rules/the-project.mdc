@@ -1,0 +1,99 @@
+---
+description: Overview of the project
+globs: "*.md,*.svelte,*.ts,*.js"
+alwaysApply: false
+---
+
+
+
+- Always strictly use English terms over American terms such as organisation instead of organisation
+
+## Project Vision
+
+I'd like to map out a "whole" organisation and the systems, documents, workflows, etc that it needs to function.
+
+I want to create this organisation in a way that it focuses on the people and their needs and the systems and workflows are wrapped around them.
+
+Currently people need to get extensive training to learn how systems and software work rather than the software and systems being intuitive and easy to use. I just want to create a playbook that sets out what an organisation needs. I dont want to do this in one step. I expect us to do this over a long period of time and hopefully in small steps.
+
+The playbook will be presented in this SvelteKit app.
+
+The playbook will develop over time and we'll update it in the playbook-rules.mdc
+
+## Why This Matters: The Case for Human-Centered organisations
+
+organisations today face unprecedented challenges in managing information, systems, and people. Our human-centered organisational playbook directly addresses these pain points to create more effective, efficient, and satisfying work environments.
+
+## Current organisational Challenges
+
+### Rising Information Complexity
+* **Data explosion**: organisations now manage exponentially more data than even five years ago
+* **Format proliferation**: Information exists in structured databases, documents, emails, chats, and specialized applications
+* **Integration struggles**: Different systems often speak different languages, requiring complex and brittle integration solutions
+* **Versioning nightmares**: Tracking the latest version of critical information becomes increasingly difficult
+
+### Siloed Information Systems
+* **Departmental barriers**: Information trapped in department-specific systems and applications
+* **Historical legacy**: Decades of accumulated systems that don't communicate effectively
+* **Vendor lock-in**: Proprietary technologies that resist integration and sharing
+* **Knowledge hoarding**: Information treated as power rather than a shared organisational asset
+
+### Staff Retention and Knowledge Loss
+* **Institutional knowledge walks out the door**: When employees leave, critical operational knowledge often leaves with them
+* **Training burden**: New staff require extensive training on complex, unintuitive systems
+* **Frustration and burnout**: Staff experience "system fatigue" from navigating cumbersome tools
+* **Generational expectations**: Newer workers expect intuitive digital experiences comparable to consumer applications
+
+### Lack of Data Standardisation
+* **Inconsistent formats**: The same information stored differently across systems
+* **Terminology confusion**: Different terms used for the same concepts
+* **Quality variations**: Inconsistent validation leading to unreliable data
+* **Reporting difficulties**: Inability to generate meaningful insights from fragmented data
+
+### Technology Acceleration
+* **Constant upgrades**: Never-ending cycle of system updates and migrations
+* **Security challenges**: Growing threats require sophisticated protection measures
+* **Cloud transition**: Movement from on-premises to cloud-based systems
+* **Automation pressure**: Need to automate routine tasks while maintaining human judgment
+
+### Regulatory Compliance Burden
+* **Growing requirements**: Increasing regulations around data privacy and security
+* **Cross-jurisdiction complexity**: Different requirements across regions and countries
+* **Audit readiness**: Need to demonstrate compliance through documentation and processes
+* **User rights**: Requirements to provide access and control to individuals whose data is stored
+
+### User Experience Failures
+* **Systems designed for computers, not people**: Interfaces that follow system logic rather than human workflows
+* **Training overhead**: Excessive time spent learning how to use poorly designed systems
+* **Accessibility gaps**: Systems that exclude users with disabilities
+* **Mobile limitations**: Legacy systems that don't work effectively on modern devices
+
+## The Human-Centered Advantage
+
+Our playbook offers a comprehensive approach to addressing these challenges by placing human needs at the center of organisational design:
+
+### For Leaders
+* Reduced operational costs through streamlined systems
+* Improved decision-making with reliable, accessible information
+* Enhanced organisational resilience through better knowledge management
+* Higher staff retention by reducing system frustration
+
+### For Staff
+* More time spent on meaningful work rather than fighting with systems
+* Reduced training requirements through intuitive design
+* Greater workplace flexibility through location-independent access
+* Improved job satisfaction through tools that support rather than hinder
+
+### For IT Teams
+* Simplified system landscape with fewer integration points
+* Clearer information architecture that scales with organisational needs
+* Reduced support burden from user-friendly systems
+* More strategic role in enabling organisational success
+
+### For Customers/Clients/Service Users
+* Faster, more accurate service delivery
+* Consistent experiences across all touchpoints
+* Greater transparency into processes and decisions
+* Higher quality outcomes from more effective organisations
+
+By addressing these fundamental challenges with a human-centered approach, organisations can transform from struggling with complexity to thriving through clarity, creating workplaces where both people and technology perform at their best.

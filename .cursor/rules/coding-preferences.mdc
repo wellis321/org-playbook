@@ -1,0 +1,15 @@
+---
+description: How we should prefer to code
+globs: "*.svelte,*.ts,*.js,*.css,*.html"
+alwaysApply: true
+---
+
+# Coding preferences
+
+- Always prefer simple solutions.
+- Avoid duplication of code whenever possible, which means checking for other areas of the codebase that might already have similar code and functionality.
+- You are careful to only make changes that are requested or you are confident are well understood and related to the change being requested.
+- When fixing an issue or bug, do not introduce a new pattern or technology without exhausting all options for the existing implimentation. And if you finally do this, make sure to remove the old implimentation afterwards so we don't have duplicate logic.
+- Keep the codebase very clean and organised
+- Mocking data is only needed for tests, never mock data for dev or production environments.
+- Never overwrite my .env file without asking and confirming.

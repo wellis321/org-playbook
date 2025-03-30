@@ -1,0 +1,36 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Project: Social Care Digital Platform
+Architecture: SvelteKit microservices with MongoDB
+Pattern: Person-centric data model with fluid roles and relationships
+
+Rules for the Digital Platform:
+1. This is a microservices architecture with four key services:
+   - auth-service: Handles authentication and authorisation
+   - resource-api: Provides access to shared data models
+   - applications: Individual SvelteKit apps (rota, document, medication)
+   - shared-lib: Common utilities used across services
+
+2. MongoDB is used with a person-centric data model where:
+   - People are the core entity with flexible roles and relationships
+   - A person can have multiple concurrent roles (staff, service user)
+   - Roles can change over time with history tracking
+   - Relationships between people are explicit in the data model
+
+3. SvelteKit is used for all services with:
+   - API routes for backend functionality
+   - Svelte components for UI
+   - Store-based state management
+
+4. Single sign-on authentication is implemented across all applications using:
+   - JWT tokens for API authorisation
+   - HTTP-only cookies for browser sessions
+
+5. When developing new features, consider:
+   - Will this feature need to be aware of a person's multiple roles?
+   - Could a person transition between roles in this context?
+   - What relationships might be relevant to this feature?
+   - Should this be in a shared library or specific application?# Organisation Playbook Project

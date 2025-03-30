@@ -1,0 +1,12 @@
+---
+description: This is the projects tech stack
+globs: 
+alwaysApply: false
+---
+
+# Technical stack
+
+- Sveltekit on the front and backend
+- MongoDB for database
+- Temporal for dates using the polyfill 
+

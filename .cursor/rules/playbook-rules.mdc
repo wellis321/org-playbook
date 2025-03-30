@@ -1,0 +1,103 @@
+---
+description: The rules of the playbook that we'll develop over time
+globs: "*.md,*.svelte,*.ts,*.js"
+alwaysApply: false
+---
+
+# Organisation Playbook Based on a Social Care Digitla Platform
+
+## Introduction
+
+The Organisation Playbook is a guide to structuring an organisation around people and their needs, rather than rigid systems -  the new Digital Platform. It aims to create intuitive, efficient workflows where staff do not require extensive training to navigate digital systems. Instead, information and processes should be designed to be natural and accessible.
+
+## Organisation Information Pool
+
+The Organisation Information Pool encompasses all the information that defines an organisation. This includes structured data on:
+
+- **Staff** – HR records, roles, authentication, payroll.
+- **People Supported** – Case records, support plans, compliance data.
+- **Teams/Groups** – Memberships, hierarchies, permissions, responsibilities.
+- **Properties & Assets** – Locations, maintenance records, ownership, usage.
+
+## Rules for Managing Information
+
+To ensure efficiency, security, and usability, the Organisation Information Pool follows these rules:
+
+- **No Duplication** – A single source of truth for all information.
+- **Standardization & Validation** – Consistent formats, enforced at multiple levels (client, API, database).
+- **Person-Centric Approach** – Designed for ease of use and improved experiences for staff and stakeholders.
+- **Security-First Design** – Data encrypted at rest and in transport, with modern security measures in place.
+
+## Enabling New Workplace Behaviors
+
+By implementing these rules, organisations can:
+
+- Transition to paperless operations.
+- Enable a mobile workforce with seamless access.
+- Provide anywhere, any device access.
+- Raise accessibility (A11y) standards for all users.
+- Improve software usability to reduce training needs and increase efficiency.
+
+## The Future Vision
+
+### National HR & Recruitment System
+
+A functional programming-based HR and recruitment system could be developed at a national level to provide modular, adaptable tools for organisations across Scotland. This system could be maintained by a dedicated development team, reducing reliance on third-party providers and increasing efficiency across the public and third sectors.
+
+### Form Builder for Organisations
+
+A key tool for organisations is a custom form builder with strict validation and GDPR compliance. Every field must have validation, and some fields may belong to GDPR rule groups with predefined access and retention controls. A form builder would help organisations:
+
+- **Eliminate duplication** – No more scattered Word documents or postal letters.
+- **Enforce standardisation** – Forms follow strict validation rules and are stored in a unified format.
+- **Enhance compliance** – GDPR rules are embedded at the field and group level.
+- **Reduce errors (Poka-Yoke)** – Predefined field types and validation prevent incorrect data entry.
+- **Improve efficiency and well-being** – Reduces administrative burden, making information more accessible and usable.
+
+## Recruitment & Onboarding: A Smarter Approach
+
+Many organisations overpay for external recruitment and onboarding tools, leading to high costs and inefficiencies. A national recruitment and onboarding system would significantly reduce costs and improve efficiency by providing a shared, adaptable solution.
+
+### Why This Matters
+
+- **Cost & Time Savings** – A centralised system would reduce licensing costs and streamline onboarding.
+- **Seamless Data Flow** – Recruitment data should flow directly into HR without duplication.
+- **Flipping the Model** – Instead of organisations adapting to rigid third-party software, the system should serve their needs by providing only essential fields with flexibility for customization.
+
+### Mapping the Candidate Journey
+
+A structured approach to recruitment should follow a clear candidate journey, ensuring transparency and efficiency:
+
+#### Job Discovery & Application
+
+- Candidates browse jobs, receive AI-driven suggestions, and apply with AI-assisted form completion.
+- Auto-fill capabilities reduce repetitive entry, making applications quicker and easier.
+- Candidates can opt into automatic applications for similar roles.
+
+#### Application Processing
+
+- Applications are reviewed, with AI helping shortlist candidates.
+- Candidates receive clear status updates (shortlisted, interview invite, or rejection with feedback).
+
+#### Interview & Selection
+
+- Candidates schedule their own interview slots.
+- Interview feedback is logged in the system.
+- Successful candidates receive digital job offers, while unsuccessful ones get structured feedback.
+
+#### Onboarding
+
+- HR & IT setup is automated, ensuring smooth transition from candidate to employee.
+- System-generated welcome packages, training materials, and first-day details streamline the onboarding experience.
+
+This structured approach ensures 100% compliance in communication, reducing administrative burden while improving candidate experience.
+
+## Implementation: How to Apply This Playbook
+
+Organisations can adopt this playbook in phases:
+
+1. **Quick Wins** – Identify and eliminate duplication, improve data validation, assess accessibility.
+2. **Long-Term Strategy** – Plan for standardised workflows, security measures, and integration of modular systems.
+3. **Full Implementation** – Build or transition to a structured, secure, and efficient digital infrastructure.
+
+This document is a living resource, evolving as organisations refine their approach to structured, people-first information management.
