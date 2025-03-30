@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { systems, categories, type System } from './systems-data';
 
 	// Filter and sort functionality
@@ -134,7 +135,7 @@
 									Quick View
 								</button>
 								<a
-									href={`/systems/${system.id}`}
+									href="{base}/systems/{system.id}"
 									class="text-sm font-medium text-blue-600 hover:text-blue-800"
 								>
 									Full Details
@@ -153,7 +154,7 @@
 				sharing data and functionality to create a seamless user experience.
 			</p>
 			<a
-				href="/roadmap"
+				href="{base}/roadmap"
 				class="inline-block rounded-lg bg-white px-6 py-2 font-medium text-slate-800 transition-colors hover:bg-slate-100"
 			>
 				View Development Roadmap
