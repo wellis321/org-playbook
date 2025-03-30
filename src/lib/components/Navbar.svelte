@@ -71,8 +71,6 @@
 
 				<a href="{base}/systems" class="font-medium text-slate-700 hover:text-slate-900">Systems</a>
 				<a href="{base}/roadmap" class="font-medium text-slate-700 hover:text-slate-900">Roadmap</a>
-				<a href="{base}/about" class="font-medium text-slate-700 hover:text-slate-900">About</a>
-				<a href="{base}/contact" class="font-medium text-slate-700 hover:text-slate-900">Contact</a>
 			</div>
 
 			<!-- Mobile menu button -->
@@ -145,15 +143,6 @@
 					class="block rounded-md px-4 py-2 text-slate-700 hover:bg-slate-100"
 				>
 					Roadmap
-				</a>
-				<a href="{base}/about" class="block rounded-md px-4 py-2 text-slate-700 hover:bg-slate-100">
-					About
-				</a>
-				<a
-					href="{base}/contact"
-					class="block rounded-md px-4 py-2 text-slate-700 hover:bg-slate-100"
-				>
-					Contact
 				</a>
 			</div>
 		{/if}
