@@ -2,6 +2,8 @@ import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 import { systems } from '../systems-data';
 
+export const prerender = false;
+
 export const load: PageLoad = async ({ params }) => {
     const { slug } = params;
 
