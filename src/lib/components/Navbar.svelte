@@ -27,29 +27,46 @@
 			<!-- Desktop menu -->
 			<div class="hidden items-center space-x-6 md:flex">
 				<a href="/" class="font-medium text-slate-700 hover:text-slate-900">Home</a>
-				
+
 				<!-- Playbook dropdown -->
 				<div class="relative">
-					<button 
+					<button
 						class="flex items-center font-medium text-slate-700 hover:text-slate-900"
-						on:click={togglePlaybookMenu}
-						on:blur={() => setTimeout(closePlaybookMenu, 100)}
+						onclick={togglePlaybookMenu}
+						onblur={() => setTimeout(closePlaybookMenu, 100)}
 					>
 						Playbook
 						<svg class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={isPlaybookMenuOpen ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"} />
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d={isPlaybookMenuOpen ? 'M5 15l7-7 7 7' : 'M19 9l-7 7-7-7'}
+							/>
 						</svg>
 					</button>
-					
+
 					{#if isPlaybookMenuOpen}
-						<div class="absolute left-0 mt-2 w-48 rounded-md bg-white py-2 shadow-lg ring-1 ring-black ring-opacity-5">
-							<a href="/playbook" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100">Overview</a>
-							<a href="/playbook/technical-architecture" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100">Technical Architecture</a>
-							<a href="/playbook/functional-composition" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100">Functional Composition</a>
+						<div
+							class="ring-opacity-5 absolute left-0 mt-2 w-48 rounded-md bg-white py-2 shadow-lg ring-1 ring-black"
+						>
+							<a href="/playbook" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100"
+								>Overview</a
+							>
+							<a
+								href="/playbook/technical-architecture"
+								class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100"
+								>Technical Architecture</a
+							>
+							<a
+								href="/playbook/functional-composition"
+								class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100"
+								>Functional Composition</a
+							>
 						</div>
 					{/if}
 				</div>
-				
+
 				<a href="/systems" class="font-medium text-slate-700 hover:text-slate-900">Systems</a>
 				<a href="/roadmap" class="font-medium text-slate-700 hover:text-slate-900">Roadmap</a>
 				<a href="/about" class="font-medium text-slate-700 hover:text-slate-900">About</a>
@@ -59,7 +76,7 @@
 			<!-- Mobile menu button -->
 			<div class="flex items-center md:hidden">
 				<button
-					on:click={toggleMenu}
+					onclick={toggleMenu}
 					class="text-slate-700 hover:text-slate-900 focus:outline-none"
 					aria-label="Toggle menu"
 				>
@@ -88,22 +105,28 @@
 		{#if isMenuOpen}
 			<div class="space-y-2 py-4 md:hidden">
 				<a href="/" class="block rounded-md px-4 py-2 text-slate-700 hover:bg-slate-100">Home</a>
-				
+
 				<!-- Playbook section with sub-items -->
 				<div>
 					<a href="/playbook" class="block rounded-md px-4 py-2 text-slate-700 hover:bg-slate-100">
 						Playbook
 					</a>
 					<div class="ml-4 space-y-1">
-						<a href="/playbook/technical-architecture" class="block rounded-md px-4 py-2 text-slate-700 hover:bg-slate-100">
+						<a
+							href="/playbook/technical-architecture"
+							class="block rounded-md px-4 py-2 text-slate-700 hover:bg-slate-100"
+						>
 							Technical Architecture
 						</a>
-						<a href="/playbook/functional-composition" class="block rounded-md px-4 py-2 text-slate-700 hover:bg-slate-100">
+						<a
+							href="/playbook/functional-composition"
+							class="block rounded-md px-4 py-2 text-slate-700 hover:bg-slate-100"
+						>
 							Functional Composition
 						</a>
 					</div>
 				</div>
-				
+
 				<a href="/systems" class="block rounded-md px-4 py-2 text-slate-700 hover:bg-slate-100">
 					Systems
 				</a>

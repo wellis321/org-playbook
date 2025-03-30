@@ -46,7 +46,7 @@
 						<strong>Properties & Assets</strong> – Locations, maintenance records, ownership, usage
 					</li>
 				</ul>
-				<a href="#" class="font-medium text-blue-600 hover:text-blue-800">Learn more →</a>
+				<button class="font-medium text-blue-600 hover:text-blue-800">Learn more →</button>
 			</div>
 
 			<div class="rounded-xl bg-white p-8 shadow-sm">
@@ -66,7 +66,7 @@
 					</li>
 					<li><strong>Security-First Design</strong> – Data encrypted at rest and in transport</li>
 				</ul>
-				<a href="#" class="font-medium text-blue-600 hover:text-blue-800">Learn more →</a>
+				<button class="font-medium text-blue-600 hover:text-blue-800">Learn more →</button>
 			</div>
 		</div>
 
@@ -90,8 +90,8 @@
 					compliance. Every field must have validation, and some fields may belong to GDPR rule
 					groups with predefined access and retention controls.
 				</p>
-				<a href="#" class="font-medium text-blue-600 hover:text-blue-800"
-					>Learn more about our vision →</a
+				<button class="font-medium text-blue-600 hover:text-blue-800"
+					>Learn more about our vision →</button
 				>
 			</div>
 		</div>

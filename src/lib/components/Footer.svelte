@@ -13,29 +13,56 @@
 				<h4 class="mb-4 font-medium text-white">Playbook</h4>
 				<ul class="space-y-2 text-sm">
 					<li><a href="/playbook" class="transition-colors hover:text-white">Overview</a></li>
-					<li><a href="#" class="transition-colors hover:text-white">Information Pool</a></li>
-					<li><a href="#" class="transition-colors hover:text-white">Managing Information</a></li>
-					<li><a href="#" class="transition-colors hover:text-white">Implementation</a></li>
+					<li>
+						<a href="/playbook/information-pool" class="transition-colors hover:text-white"
+							>Information Pool</a
+						>
+					</li>
+					<li>
+						<a href="/playbook/managing-information" class="transition-colors hover:text-white"
+							>Managing Information</a
+						>
+					</li>
+					<li>
+						<a href="/playbook/implementation" class="transition-colors hover:text-white"
+							>Implementation</a
+						>
+					</li>
 				</ul>
 			</div>
 
 			<div>
 				<h4 class="mb-4 font-medium text-white">Resources</h4>
 				<ul class="space-y-2 text-sm">
-					<li><a href="#" class="transition-colors hover:text-white">Case Studies</a></li>
-					<li><a href="#" class="transition-colors hover:text-white">Templates</a></li>
-					<li><a href="#" class="transition-colors hover:text-white">Best Practices</a></li>
-					<li><a href="#" class="transition-colors hover:text-white">FAQ</a></li>
+					<li>
+						<a href="/resources/case-studies" class="transition-colors hover:text-white"
+							>Case Studies</a
+						>
+					</li>
+					<li>
+						<a href="/resources/templates" class="transition-colors hover:text-white">Templates</a>
+					</li>
+					<li>
+						<a href="/resources/best-practices" class="transition-colors hover:text-white"
+							>Best Practices</a
+						>
+					</li>
+					<li><a href="/resources/faq" class="transition-colors hover:text-white">FAQ</a></li>
 				</ul>
 			</div>
 
 			<div>
-				<h4 class="mb-4 font-medium text-white">Connect</h4>
+				<h4 class="mb-4 font-medium text-white">Company</h4>
 				<ul class="space-y-2 text-sm">
 					<li><a href="/about" class="transition-colors hover:text-white">About Us</a></li>
 					<li><a href="/contact" class="transition-colors hover:text-white">Contact</a></li>
-					<li><a href="#" class="transition-colors hover:text-white">Newsletter</a></li>
-					<li><a href="#" class="transition-colors hover:text-white">GitHub</a></li>
+					<li><a href="/newsletter" class="transition-colors hover:text-white">Newsletter</a></li>
+					<li>
+						<a
+							href="https://github.com/wellis321/org-playbook"
+							class="transition-colors hover:text-white">GitHub</a
+						>
+					</li>
 				</ul>
 			</div>
 		</div>
