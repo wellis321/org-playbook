@@ -126,7 +126,7 @@
 					to creating organisations where both people and technology perform at their best.
 				</p>
 				<a
-					href="/playbook"
+					href="https://wellis321.github.io/org-playbook/playbook"
 					class="inline-block rounded-lg bg-white px-6 py-2 font-medium text-slate-800 transition-colors hover:bg-slate-100"
 				>
 					Explore the Playbook
