@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { System } from '../systems-data';
+	import { base } from '$app/paths';
 
 	export let data: { system: System; title: string; description: string };
 	const system = data.system;
@@ -47,7 +48,7 @@
 				<ol class="inline-flex items-center space-x-1 md:space-x-3">
 					<li class="inline-flex items-center">
 						<a
-							href="/"
+							href="{base}/"
 							class="inline-flex items-center text-sm text-slate-600 hover:text-slate-900"
 						>
 							<svg
@@ -77,8 +78,9 @@
 									clip-rule="evenodd"
 								></path>
 							</svg>
-							<a href="/systems" class="ml-1 text-sm text-slate-600 hover:text-slate-900 md:ml-2"
-								>Systems</a
+							<a
+								href="{base}/systems"
+								class="ml-1 text-sm text-slate-600 hover:text-slate-900 md:ml-2">Systems</a
 							>
 						</div>
 					</li>
@@ -1117,7 +1119,7 @@
 									This system shares data and functionality with the {system.name} system.
 								</p>
 								<a
-									href={`/systems/${integration.toLowerCase().replace(/\s+/g, '')}`}
+									href="{base}/systems/{integration.toLowerCase().replace(/\s+/g, '')}"
 									class="text-sm font-medium text-blue-600 hover:text-blue-800"
 								>
 									View System Details
@@ -1306,7 +1308,7 @@
 		<!-- Back to systems button -->
 		<div class="text-center">
 			<a
-				href="/systems"
+				href="{base}/systems"
 				class="inline-flex items-center rounded-lg bg-slate-100 px-5 py-2.5 text-center text-sm font-medium text-slate-700 hover:bg-slate-200 focus:ring-4 focus:ring-slate-300 focus:outline-none"
 			>
 				<svg
