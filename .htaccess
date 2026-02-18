@@ -3,6 +3,14 @@
 RewriteEngine On
 RewriteBase /
 
+# Redirect /playbook to playbook/index.php
+RewriteRule ^playbook/?$ playbook/index.php [L]
+
+# Redirect /playbook/[page] to playbook/[page].php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^playbook/([^/]+)/?$ playbook/$1.php [L]
+
 # Redirect /blogs to blogs/index.php
 RewriteRule ^blogs/?$ blogs/index.php [L]
 
