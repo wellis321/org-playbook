@@ -11,6 +11,9 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^blogs/([^/]+)/?$ blogs/$1.php [L]
 
+# Redirect /contact to contact/index.php
+RewriteRule ^contact/?$ contact/index.php [L]
+
 # Redirect /systems/[slug] to /systems/detail.php?slug=[slug]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -22,6 +25,9 @@ RewriteRule ^systems/([^/]+)/?$ systems/detail.php?slug=$2&tab=%1 [L,QSA]
 
 # Prevent direct access to PHP files in includes, config, and sql directories
 RewriteRule ^(includes|config|sql)/ - [F,L]
+
+# Custom 404 page
+ErrorDocument 404 /404.php
 
 # Prevent directory listing
 Options -Indexes

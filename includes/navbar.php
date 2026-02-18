@@ -70,6 +70,7 @@ $base = '';
                 </div>
 
                 <a href="<?php echo $base; ?>/roadmap" class="font-medium text-slate-700 hover:text-slate-900">Roadmap</a>
+                <a href="<?php echo $base; ?>/contact" class="font-medium text-slate-700 hover:text-slate-900">Contact</a>
             </div>
 
             <!-- Mobile menu button -->
@@ -127,6 +128,7 @@ $base = '';
             </div>
 
             <a href="<?php echo $base; ?>/roadmap" class="block rounded-md px-4 py-2 text-slate-700 hover:bg-slate-100">Roadmap</a>
+            <a href="<?php echo $base; ?>/contact" class="block rounded-md px-4 py-2 text-slate-700 hover:bg-slate-100">Contact</a>
         </div>
     </div>
 </nav>

@@ -80,6 +80,13 @@ if (preg_match('#^/systems/([^/]+)/?$#', $uri, $matches)) {
     return true;
 }
 
+// Route: /contact -> contact/index.php
+if ($uri === '/contact' || $uri === '/contact/') {
+    $_SERVER['SCRIPT_NAME'] = '/contact/index.php';
+    require __DIR__ . '/contact/index.php';
+    return true;
+}
+
 // Route: /admin -> admin/index.php
 if ($uri === '/admin' || $uri === '/admin/') {
     $_SERVER['SCRIPT_NAME'] = '/admin/index.php';
@@ -94,5 +101,7 @@ if ($uri === '/' || $uri === '') {
     return true;
 }
 
-// For other paths, let PHP's default handler deal with it
-return false;
+// 404 for unmatched routes
+http_response_code(404);
+require __DIR__ . '/404.php';
+return true;

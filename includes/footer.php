@@ -27,12 +27,10 @@
             <div>
                 <h4 class="mb-4 font-medium text-white">Resources</h4>
                 <ul class="space-y-2 text-sm">
-                    <li>
-                        <a href="/systems" class="transition-colors hover:text-white">Systems</a>
-                    </li>
-                    <li>
-                        <a href="/roadmap" class="transition-colors hover:text-white">Roadmap</a>
-                    </li>
+                    <li><a href="/systems" class="transition-colors hover:text-white">Systems</a></li>
+                    <li><a href="/blogs" class="transition-colors hover:text-white">Blogs</a></li>
+                    <li><a href="/roadmap" class="transition-colors hover:text-white">Roadmap</a></li>
+                    <li><a href="/contact" class="transition-colors hover:text-white">Contact</a></li>
                 </ul>
             </div>
 
