@@ -1,0 +1,34 @@
+# URL Rewriting for clean URLs
+
+RewriteEngine On
+RewriteBase /
+
+# Redirect /blogs to blogs/index.php
+RewriteRule ^blogs/?$ blogs/index.php [L]
+
+# Redirect /blogs/[slug] to blogs/[slug].php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blogs/([^/]+)/?$ blogs/$1.php [L]
+
+# Redirect /systems/[slug] to /systems/detail.php?slug=[slug]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^systems/([^/]+)/?$ systems/detail.php?slug=$1 [L,QSA]
+
+# Redirect /systems/[slug]?tab=xxx to /systems/detail.php?slug=[slug]&tab=xxx
+RewriteCond %{QUERY_STRING} ^tab=(.*)$
+RewriteRule ^systems/([^/]+)/?$ systems/detail.php?slug=$2&tab=%1 [L,QSA]
+
+# Prevent direct access to PHP files in includes, config, and sql directories
+RewriteRule ^(includes|config|sql)/ - [F,L]
+
+# Prevent directory listing
+Options -Indexes
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
